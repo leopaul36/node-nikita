@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Index.coffee - node-nikita</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../context.coffee/">node-nikita</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../context.coffee/">Context.coffee</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../index.coffee/">Index.coffee</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../registry.coffee/">Registry.coffee</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alt <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../alt/ldap_acl.coffee/">Ldap acl.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../alt/ldap_index.coffee/">Ldap index.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connection <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../connection/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../connection/wait.coffee/">Wait.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Core <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../core/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../core/ping.coffee/">Ping.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Kv</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../core/kv/engine.coffee/">Engine.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../core/kv/get.coffee/">Get.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../core/kv/set.coffee/">Set.coffee</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Engines</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../core/kv/engines/memory.coffee/">Memory.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cron <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../cron/add.coffee/">Add.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../cron/remove.coffee/">Remove.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Db <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Database</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../db/database/exists.coffee/">Exists.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../db/database/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../db/database/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../db/database/wait.coffee/">Wait.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Schema</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../db/schema/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../db/schema/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../db/user/exists.coffee/">Exists.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../db/user/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../db/user/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docker <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../docker/build.coffee/">Build.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/checksum.coffee/">Checksum.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/cp.coffee/">Cp.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/exec.coffee/">Exec.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/kill.coffee/">Kill.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/load.coffee/">Load.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/login.coffee/">Login.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/logout.coffee/">Logout.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/pause.coffee/">Pause.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/pull.coffee/">Pull.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/restart.coffee/">Restart.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/rm.coffee/">Rm.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/rmi.coffee/">Rmi.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/run.coffee/">Run.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/save.coffee/">Save.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/service.coffee/">Service.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/start.coffee/">Start.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/status.coffee/">Status.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/stop.coffee/">Stop.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/unpause.coffee/">Unpause.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/volume_create.coffee/">Volume create.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/volume_rm.coffee/">Volume rm.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../docker/wait.coffee/">Wait.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Compose</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../docker/compose/index.coffee/">Index.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">File <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cache.coffee/">Cache.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cson.coffee/">Cson.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../download.coffee/">Download.coffee</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ini.coffee/">Ini.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../json.coffee/">Json.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../render.coffee/">Render.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../touch.coffee/">Touch.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../upload.coffee/">Upload.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../yaml.coffee/">Yaml.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Properties</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../properties/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../properties/read.coffee/">Read.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Types</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../types/ceph_conf.coffee/">Ceph conf.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../types/locale_gen.coffee/">Locale gen.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../types/pacman_conf.coffee/">Pacman conf.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../types/ssh_authorized_keys.coffee/">Ssh authorized keys.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../types/yum_repo.coffee/">Yum repo.coffee</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Etc group</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../types/etc_group/read.coffee/">Read.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Etc passwd</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../types/etc_passwd/read.coffee/">Read.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../fs/chmod.coffee/">Chmod.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/chown.coffee/">Chown.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/copy.coffee/">Copy.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/createReadStream.coffee/">createReadStream.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/exists.coffee/">Exists.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/lstat.coffee/">Lstat.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/mkdir.coffee/">Mkdir.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/readFile.coffee/">readFile.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/readlink.coffee/">Readlink.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/rename.coffee/">Rename.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/rmdir.coffee/">Rmdir.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/stat.coffee/">Stat.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/symlink.coffee/">Symlink.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/unlink.coffee/">Unlink.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fs/writeFile.coffee/">writeFile.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../java/keystore_add.coffee/">Keystore add.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../java/keystore_remove.coffee/">Keystore remove.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Krb5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../krb5/addprinc.coffee/">Addprinc.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../krb5/delprinc.coffee/">Delprinc.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../krb5/ktadd.coffee/">Ktadd.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../krb5/ticket.coffee/">Ticket.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Ktutil</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../krb5/ktutil/add.coffee/">Add.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ldap <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../ldap/acl.coffee/">Acl.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ldap/add.coffee/">Add.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ldap/delete.coffee/">Delete.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ldap/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ldap/schema.coffee/">Schema.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ldap/user.coffee/">User.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../log/cli.coffee/">Cli.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../log/csv.coffee/">Csv.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../log/fs.coffee/">Fs.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../log/md.coffee/">Md.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../log/stream.coffee/">Stream.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../misc/conditions.coffee/">Conditions.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/db.coffee/">Db.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/diff.coffee/">Diff.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/docker.coffee/">Docker.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/krb5.coffee/">Krb5.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/ldap.coffee/">Ldap.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/os.coffee/">Os.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../misc/pidfile_running.coffee/">Pidfile running.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../service/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/discover.coffee/">Discover.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/init.coffee/">Init.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/install.coffee/">Install.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/remove.coffee/">Remove.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/restart.coffee/">Restart.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/start.coffee/">Start.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/startup.coffee/">Startup.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/status.coffee/">Status.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../service/stop.coffee/">Stop.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ssh <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../ssh/close.coffee/">Close.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ssh/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ssh/open.coffee/">Open.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ssh/root.coffee/">Root.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../system/cgroups.coffee/">Cgroups.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/chmod.coffee/">Chmod.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/chown.coffee/">Chown.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/copy.coffee/">Copy.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/discover.coffee/">Discover.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/limits.coffee/">Limits.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/link.coffee/">Link.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/mkdir.coffee/">Mkdir.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/mod.coffee/">Mod.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/move.coffee/">Move.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/remove.coffee/">Remove.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/tmpfs.coffee/">Tmpfs.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../system/uid_gid.coffee/">Uid gid.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Execute</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../system/execute/assert.coffee/">Assert.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../system/execute/index.coffee/">Index.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Group</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../system/group/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../system/group/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../system/user/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../system/user/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../tools/backup.coffee/">Backup.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tools/compress.coffee/">Compress.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tools/extract.coffee/">Extract.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tools/git.coffee/">Git.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tools/iptables.coffee/">Iptables.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tools/repo.coffee/">Repo.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tools/sysctl.coffee/">Sysctl.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Rubygems</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../tools/rubygems/fetch.coffee/">Fetch.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tools/rubygems/install.coffee/">Install.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tools/rubygems/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Wait <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../wait/execute.coffee/">Execute.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../wait/exist.coffee/">Exist.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../wait/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../download.coffee/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../ini.coffee/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#nikitafileoptions-callback">nikita.file(options, callback)</a></li>
+        
+            <li><a href="#options">Options</a></li>
+        
+            <li><a href="#callback-parameters">Callback parameters</a></li>
+        
+            <li><a href="#implementation-details">Implementation details</a></li>
+        
+            <li><a href="#diff-lines">Diff Lines</a></li>
+        
+            <li><a href="#more-about-the-append-option">More about the append option</a></li>
+        
+            <li><a href="#replacing-part-of-a-file-using-from-and-to-markers">Replacing part of a file using from and to markers</a></li>
+        
+            <li><a href="#replacing-a-matched-line-by-a-string">Replacing a matched line by a string</a></li>
+        
+            <li><a href="#replacing-part-of-a-file-using-a-regular-expression">Replacing part of a file using a regular expression</a></li>
+        
+            <li><a href="#replacing-with-the-global-and-multiple-lines-options">Replacing with the global and multiple lines options</a></li>
+        
+            <li><a href="#appending-a-line-after-each-line-containing-property">Appending a line after each line containing "property"</a></li>
+        
+            <li><a href="#multiple-transformations">Multiple transformations</a></li>
+        
+            <li><a href="#source-code">Source Code</a></li>
+        
+            <li><a href="#dependencies">Dependencies</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="nikitafileoptions-callback"><code>nikita.file(options, callback)</code></h1>
+<p>Write a file or a portion of an existing file.</p>
+<h2 id="options">Options</h2>
+<ul>
+<li><code>append</code> <br />
+  Append the content to the target file. If target does not exist,
+  the file will be created.</li>
+<li><code>backup</code> (string|boolean) <br />
+  Create a backup, append a provided string to the filename extension or a
+  timestamp if value is not a string, only apply if the target file exists and
+  is modified.</li>
+<li><code>backup_mode</code> <br />
+  Backup file mode (permission and sticky bits), defaults to <code>0o0400</code>, in the 
+  form of <code>{mode: 0o0400}</code> or <code>{mode: "0400"}</code>.</li>
+<li><code>content</code> <br />
+  Text to be written, an alternative to source which reference a file.</li>
+<li><code>diff</code> (boolean | function) <br />
+  Print diff information, pass a readable diff and the result of <a href="https://github.com/kpdecker/jsdiff">jsdiff.diffLines</a> as
+  arguments if a function, default to true.</li>
+<li><code>eof</code> <br />
+  Ensure the file ends with this charactere sequence, special values are
+  'windows', 'mac', 'unix' and 'unicode' (respectively "\r\n", "\r", "\n",
+  "\u2028"), will be auto-detected if "true", default to false or "\n" if
+  "true" and not detected.</li>
+<li><code>from</code> <br />
+  Replace from after this marker, a string or a regular expression.</li>
+<li><code>gid</code> <br />
+  File group name or group id.</li>
+<li><code>local</code> <br />
+  Treat the source as local instead of remote, only apply with "ssh"
+  option.</li>
+<li><code>match</code> <br />
+  Replace this marker, a string or a regular expression, default to the
+  replaced string if missing.</li>
+<li><code>mode</code> <br />
+  File mode (permission and sticky bits), default to <code>0o0644</code>, in the form of
+  <code>{mode: 0o0744}</code> or <code>{mode: "0744"}</code>.</li>
+<li><code>place_before</code> (string, boolean, regex) <br />
+  Place the content before the match.</li>
+<li><code>replace</code> <br />
+  The content to be inserted, used conjointly with the from, to or match
+  options.</li>
+<li><code>source</code> <br />
+  File path from where to extract the content, do not use conjointly with
+  content.</li>
+<li><code>target</code> <br />
+  File path where to write content to.</li>
+<li><code>to</code> <br />
+  Replace to before this marker, a string or a regular expression.</li>
+<li><code>uid</code> <br />
+  File user name or user id.</li>
+<li><code>unlink</code> (boolean) <br />
+  Replace the existing link, leaving the refered file untouched.</li>
+<li><code>write</code> <br />
+  An array containing multiple transformation where a transformation is an
+  object accepting the options <code>from</code>, <code>to</code>, <code>match</code> and <code>replace</code>.</li>
+</ul>
+<h2 id="callback-parameters">Callback parameters</h2>
+<ul>
+<li><code>err</code> <br />
+  Error object if any.</li>
+<li><code>status</code> <br />
+  Indicate file modifications.</li>
+</ul>
+<h2 id="implementation-details">Implementation details</h2>
+<p>Internally, this function uses the "chmod" and "chown" function and, thus,
+honor all their options including "mode", "uid" and "gid".</p>
+<h2 id="diff-lines">Diff Lines</h2>
+<p>Diff can be obtained when the options "diff" is set to true or a function. The
+information is provided in two ways:</p>
+<ul>
+<li>when <code>true</code>, a formated string written to the "stdout" option.</li>
+<li>when a function, a readable diff and the array returned by the function 
+  <code>diff.diffLines</code>, see the <a href="https://github.com/kpdecker/jsdiff">diffLines</a> package for additionnal information.</li>
+</ul>
+<h2 id="more-about-the-append-option">More about the <code>append</code> option</h2>
+<p>The <code>append</code> option allows more advanced usages. If <code>append</code> is "null", it will
+add the value of the "replace" option at the end of the file when no match
+is found and when the value is a string.</p>
+<p>Using the <code>append</code> option conjointly with the <code>match</code> and <code>replace</code> options gets
+even more interesting. If append is a string or a regular expression, it will
+place the value of the "replace" option just after the match. Internally, a
+string value will be converted to a regular expression. For example the string
+"test" will end up converted to the regular expression <code>/test/mg</code>.</p>
+<h2 id="replacing-part-of-a-file-using-from-and-to-markers">Replacing part of a file using from and to markers</h2>
+<pre><code class="js">require('nikita').file({
+  content: 'here we are\n# from\nlets try to replace that one\n# to\nyou coquin',
+  from: '# from\n',
+  to: '# to',
+  replace: 'my friend\n',
+  target: scratch+'/a_file'
+}, function(err, written){
+  // '# here we are\n# from\nmy friend\n# to\nyou coquin'
+})
+</code></pre>
+
+<h2 id="replacing-a-matched-line-by-a-string">Replacing a matched line by a string</h2>
+<pre><code class="js">require('nikita').file({
+  content: 'email=david(at)adaltas(dot)com\nusername=root',
+  match: /(username)=(.*)/,
+  replace: '$1=david (was $2)',
+  target: scratch+'/a_file'
+}, function(err, written){
+  // '# email=david(at)adaltas(dot)com\nusername=david (was root)'
+})
+</code></pre>
+
+<h2 id="replacing-part-of-a-file-using-a-regular-expression">Replacing part of a file using a regular expression</h2>
+<pre><code class="js">require('nikita').file({
+  content: 'here we are\nlets try to replace that one\nyou coquin',
+  match: /(.*try) (.*)/,
+  replace: ['my friend, $1'],
+  target: scratch+'/a_file'
+}, function(err, written){
+  // '# here we are\nmy friend, lets try\nyou coquin'
+})
+</code></pre>
+
+<h2 id="replacing-with-the-global-and-multiple-lines-options">Replacing with the global and multiple lines options</h2>
+<pre><code class="js">require('nikita').file({
+  content: '#A config file\n#property=30\nproperty=10\n#End of Config',
+  match: /^property=.*$/mg,
+  replace: 'property=50',
+  target: scratch+'/a_file'
+}, function(err, written){
+  // '# A config file\n#property=30\nproperty=50\n#End of Config'
+})
+</code></pre>
+
+<h2 id="appending-a-line-after-each-line-containing-property">Appending a line after each line containing "property"</h2>
+<pre><code class="js">require('nikita').file({
+  content: '#A config file\n#property=30\nproperty=10\n#End of Config',
+  match: /^.*comment.*$/mg,
+  replace: '# comment',
+  target: scratch+'/a_file',
+  append: 'property'
+}, function(err, written){
+  // '# A config file\n#property=30\n# comment\nproperty=50\n# comment\n#End of Config'
+})
+</code></pre>
+
+<h2 id="multiple-transformations">Multiple transformations</h2>
+<pre><code class="js">require('nikita').file({
+  content: 'username: me\nemail: my@email\nfriends: you',
+  write: [
+    {match: /^(username).*$/mg, replace: '$1: you'},
+    {match: /^email.*$/mg, replace: ''},
+    {match: /^(friends).*$/mg, replace: '$1: me'}
+  ],
+  target: scratch+'/a_file'
+}, function(err, written){
+  // 'username: you\n\nfriends: me'
+})
+</code></pre>
+
+<h2 id="source-code">Source Code</h2>
+<pre><code>module.exports = (options) -&gt;
+  options.log message: "Entering file", level: 'DEBUG', module: 'nikita/lib/file'
+  # SSH connection
+  ssh = @ssh options.ssh
+  # Validate parameters
+  return throw Error 'Missing source or content' unless (options.source or options.content?) or options.replace or options.write?
+  return throw Error 'Define either source or content' if options.source and options.content
+  return throw Error 'Missing target' unless options.target
+  options.log message: "Source is \"#{options.source}\"", level: 'DEBUG', module: 'nikita/lib/file'
+  options.log message: "Destination is \"#{options.target}\"", level: 'DEBUG', module: 'nikita/lib/file'
+  options.content = options.content.toString() if options.content and Buffer.isBuffer options.content
+  options.content = options.content options if typeof options.content is 'function'
+  options.diff ?= options.diff or !!options.stdout
+  options.engine ?= 'nunjunks'
+  options.unlink ?= false
+  options.encoding ?= 'utf8'
+  switch options.eof
+    when 'unix'
+      options.eof = "\n"
+    when 'mac'
+      options.eof = "\r"
+    when 'windows'
+      options.eof = "\r\n"
+    when 'unicode'
+      options.eof = "\u2028"
+  target  = null
+  targetHash = null
+  options.write ?= []
+  if options.from? or options.to? or options.match? or options.replace? or options.place_before?
+    options.write.push
+      from: options.from
+      to: options.to
+      match: options.match
+      replace: options.replace
+      append: options.append
+      place_before: options.place_before
+    options.append = false
+  for w in options.write
+    if not w.from? and not w.to? and not w.match? and w.replace?
+      w.match = w.replace
+  # Start work
+  @call (_, callback) -&gt; # read source
+    if options.content?
+      options.content = "#{options.content}" if typeof options.content is 'number'
+      return callback()
+    # Option "local" force to bypass the ssh
+    # connection, use by the upload function
+    source = options.source or options.target
+    options.log message: "Force local source is \"#{if options.local then 'true' else 'false'}\"", level: 'DEBUG', module: 'nikita/lib/file'
+    @fs.exists
+      ssh: if options.local then false else options.ssh
+      target: source
+    , (err, exists) -&gt;
+      return callback err if err
+      unless exists
+        return callback Error "Source does not exist: #{JSON.stringify options.source}" if options.source
+        options.content = ''
+        return callback()
+      options.log message: "Reading source", level: 'DEBUG', module: 'nikita/lib/file'
+      @fs.readFile
+        ssh: if options.local then false else options.ssh
+        target: source
+        encoding: options.encoding
+      , (err, src) -&gt;
+        return callback err if err
+        options.content = src
+        callback()
+  targetStat = null
+  @call (_, callback) -&gt; # read target
+    # no need to test changes if target is a callback
+    return callback() if typeof options.target is 'function'
+    exists = =&gt;
+      options.log message: "Stat target", level: 'DEBUG', module: 'nikita/lib/file'
+      @fs.lstat ssh: options.ssh, target: options.target, relax: true, (err, stat) -&gt;
+        return do_mkdir() if err?.code is 'ENOENT'
+        return callback err if err
+        targetStat = stat
+        if stat.isDirectory()
+          options.target = "#{options.target}/#{path.basename options.source}"
+          options.log message: "Destination is a directory and is now \"options.target\"", level: 'INFO', module: 'nikita/lib/file'
+          # Destination is the parent directory, let's see if the file exist inside
+          @fs.stat ssh: options.ssh, target: options.target, (err, stat) -&gt;
+            if err?.code is 'ENOENT'
+              options.log message: "New target does not exist", level: 'INFO', module: 'nikita/lib/file'
+              return callback()
+            return callback err if err
+            return callback Error "Destination is not a file: #{options.target}" unless stat.isFile()
+            options.log message: "New target exist", level: 'INFO', module: 'nikita/lib/file'
+            targetStat = stat
+            do_read()
+        else if stat.isSymbolicLink()
+          options.log message: "Destination is a symlink", level: 'INFO', module: 'nikita/lib/file'
+          return do_read() unless options.unlink
+          @fs.unlink ssh: options.ssh, target: options.target, (err) -&gt;
+            return callback err if err
+            callback() # Dont go to mkdir since parent dir exists
+        else if stat.isFile()
+          options.log message: "Destination is a file", level: 'INFO', module: 'nikita/lib/file'
+          do_read()
+        else
+          callback Error "Invalid File Type Destination: #{options.target}"
+    do_mkdir = =&gt;
+      options.mode = parseInt(options.mode, 8) if typeof options.mode is 'string' 
+      @system.mkdir
+        target: path.dirname options.target
+        uid: options.uid
+        gid: options.gid
+        # force execution right on mkdir
+        mode: if options.mode then (options.mode | 0o111) else 0o755 
+        # Modify uid and gid if the dir does not yet exists
+        unless_exists: path.dirname options.target
+      , (err, created) -&gt;
+        return callback err if err
+        callback()
+    do_read = =&gt;
+      options.log message: "Reading target", level: 'DEBUG', module: 'nikita/lib/file'
+      @fs.readFile ssh: options.ssh, target: options.target, encoding: options.encoding, (err, dest) -&gt;
+        return callback err if err
+        target = dest # only used by diff
+        targetHash = string.hash dest
+        callback()
+    exists()
+  @call  -&gt; # render
+    string.render options if options.context?
+  @call -&gt; # skip_empty_lines
+    return unless options.skip_empty_lines?
+    options.log message: "Skip empty lines", level: 'DEBUG', module: 'nikita/lib/file'
+    options.content = options.content.replace /(\r\n|[\n\r\u0085\u2028\u2029])\s*(\r\n|[\n\r\u0085\u2028\u2029])/g, "$1"
+  @call -&gt; # replace_partial
+    string.replace_partial options if options.write.length
+  @call -&gt; # eof
+    return unless options.eof?
+    options.log message: 'Checking option eof', level: 'DEBUG', module: 'nikita/lib/file'
+    if options.eof is true
+      for char, i in options.content
+        if char is '\r'
+          options.eof = if options.content[i+1] is '\n' then '\r\n' else char
+          break
+        if char is '\n' or char is '\u2028'
+          options.eof = char
+          break;
+      options.eof = '\n' if options.eof is true
+      options.log message: "Option eof is true, guessing as #{JSON.stringify options.eof}", level: 'INFO', module: 'nikita/lib/file'
+    unless string.endsWith options.content, options.eof
+      options.log message: 'Add eof', level: 'INFO', module: 'nikita/lib/file'
+      options.content += options.eof
+  @call (_, callback) -&gt; # diff
+    return callback() if targetHash is string.hash options.content
+    options.log message: "File content has changed: #{options.target}", level: 'WARN', module: 'nikita/lib/file'
+    {raw, text} = diff target, options.content, options
+    options.diff text, raw if typeof options.diff is 'function'
+    options.log message: text, type: 'diff', level: 'INFO', module: 'nikita/lib/file'
+    callback null, true
+  @call -&gt; # backup
+    return unless @status()
+    return unless options.backup and targetHash
+    options.log message: "Create backup", level: 'INFO', module: 'nikita/lib/file'
+    options.backup_mode ?= 0o0400
+    backup = if typeof options.backup is 'string' then options.backup else ".#{Date.now()}"
+    @system.copy
+      ssh: options.ssh
+      source: options.target
+      target: "#{options.target}#{backup}"
+      mode: options.backup_mode
+  @call (_, callback) -&gt; # file
+    return callback() unless @status()
+    if typeof options.target is 'function'
+      options.log message: 'Write target with user function', level: 'INFO', module: 'nikita/lib/file'
+      options.target options.content
+      return callback()
+    options.flags ?= 'a' if options.append
+    # Ownership and permission are also handled
+    # Mode is setted by default here to avoid a chmod 644 on existing file if option.mode is not specified
+    options.mode ?= 0o0644
+    @fs.writeFile
+      target: options.target
+      flags: options.flags
+      content: options.content
+    , callback
+  @system.uid_gid
+    uid: options.uid
+    gid: options.gid
+    shy: true
+  , (err, status, {uid, gid, default_gid}) -&gt;
+    options.uid = uid
+    options.gid = unless targetStat then default_gid else gid
+  @call -&gt;
+    # Option gid is set at runtime if target is a new file
+    @system.chown
+      target: options.target
+      stat: targetStat
+      ssh: options.ssh
+      sudo: options.sudo
+      uid: options.uid
+      gid: options.gid
+      if: options.uid? or options.gid?
+      unless: options.target is 'function'
+  @system.chmod
+    target: options.target
+    stat: targetStat
+    ssh: options.ssh
+    sudo: options.sudo
+    mode: options.mode
+    if: options.mode?
+    unless: options.target is 'function'
+</code></pre>
+<h2 id="dependencies">Dependencies</h2>
+<pre><code>path = require 'path'
+eco = require 'eco'
+nunjucks = require 'nunjucks/src/environment'
+misc = require '../misc'
+diff = require '../misc/diff'
+string = require '../misc/string'
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

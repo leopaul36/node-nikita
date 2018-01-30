@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Context.coffee - node-nikita</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="./">node-nikita</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href="./">Context.coffee</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../index.coffee/">Index.coffee</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../registry.coffee/">Registry.coffee</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alt <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../alt/ldap_acl.coffee/">Ldap acl.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../alt/ldap_index.coffee/">Ldap index.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connection <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../connection/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../connection/wait.coffee/">Wait.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Core <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../core/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../core/ping.coffee/">Ping.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Kv</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../core/kv/engine.coffee/">Engine.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../core/kv/get.coffee/">Get.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../core/kv/set.coffee/">Set.coffee</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Engines</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../core/kv/engines/memory.coffee/">Memory.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cron <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cron/add.coffee/">Add.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cron/remove.coffee/">Remove.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Db <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Database</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../db/database/exists.coffee/">Exists.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../db/database/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../db/database/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../db/database/wait.coffee/">Wait.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Schema</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../db/schema/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../db/schema/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../db/user/exists.coffee/">Exists.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../db/user/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../db/user/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docker <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../docker/build.coffee/">Build.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/checksum.coffee/">Checksum.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/cp.coffee/">Cp.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/exec.coffee/">Exec.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/kill.coffee/">Kill.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/load.coffee/">Load.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/login.coffee/">Login.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/logout.coffee/">Logout.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/pause.coffee/">Pause.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/pull.coffee/">Pull.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/restart.coffee/">Restart.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/rm.coffee/">Rm.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/rmi.coffee/">Rmi.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/run.coffee/">Run.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/save.coffee/">Save.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/service.coffee/">Service.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/start.coffee/">Start.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/status.coffee/">Status.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/stop.coffee/">Stop.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/unpause.coffee/">Unpause.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/volume_create.coffee/">Volume create.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/volume_rm.coffee/">Volume rm.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docker/wait.coffee/">Wait.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Compose</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../docker/compose/index.coffee/">Index.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">File <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../file/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/cache.coffee/">Cache.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/cson.coffee/">Cson.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/download.coffee/">Download.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/ini.coffee/">Ini.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/json.coffee/">Json.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/render.coffee/">Render.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/touch.coffee/">Touch.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/upload.coffee/">Upload.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/yaml.coffee/">Yaml.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Properties</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../file/properties/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../file/properties/read.coffee/">Read.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Types</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../file/types/ceph_conf.coffee/">Ceph conf.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../file/types/locale_gen.coffee/">Locale gen.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../file/types/pacman_conf.coffee/">Pacman conf.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../file/types/ssh_authorized_keys.coffee/">Ssh authorized keys.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../file/types/yum_repo.coffee/">Yum repo.coffee</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Etc group</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../file/types/etc_group/read.coffee/">Read.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Etc passwd</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../file/types/etc_passwd/read.coffee/">Read.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../fs/chmod.coffee/">Chmod.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/chown.coffee/">Chown.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/copy.coffee/">Copy.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/createReadStream.coffee/">createReadStream.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/exists.coffee/">Exists.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/lstat.coffee/">Lstat.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/mkdir.coffee/">Mkdir.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/readFile.coffee/">readFile.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/readlink.coffee/">Readlink.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/rename.coffee/">Rename.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/rmdir.coffee/">Rmdir.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/stat.coffee/">Stat.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/symlink.coffee/">Symlink.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/unlink.coffee/">Unlink.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fs/writeFile.coffee/">writeFile.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../java/keystore_add.coffee/">Keystore add.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../java/keystore_remove.coffee/">Keystore remove.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Krb5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../krb5/addprinc.coffee/">Addprinc.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../krb5/delprinc.coffee/">Delprinc.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../krb5/ktadd.coffee/">Ktadd.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../krb5/ticket.coffee/">Ticket.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Ktutil</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../krb5/ktutil/add.coffee/">Add.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ldap <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../ldap/acl.coffee/">Acl.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ldap/add.coffee/">Add.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ldap/delete.coffee/">Delete.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ldap/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ldap/schema.coffee/">Schema.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ldap/user.coffee/">User.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../log/cli.coffee/">Cli.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../log/csv.coffee/">Csv.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../log/fs.coffee/">Fs.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../log/md.coffee/">Md.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../log/stream.coffee/">Stream.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../misc/conditions.coffee/">Conditions.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/db.coffee/">Db.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/diff.coffee/">Diff.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/docker.coffee/">Docker.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/krb5.coffee/">Krb5.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/ldap.coffee/">Ldap.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/os.coffee/">Os.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../misc/pidfile_running.coffee/">Pidfile running.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../service/assert.coffee/">Assert.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/discover.coffee/">Discover.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/init.coffee/">Init.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/install.coffee/">Install.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/remove.coffee/">Remove.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/restart.coffee/">Restart.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/start.coffee/">Start.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/startup.coffee/">Startup.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/status.coffee/">Status.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../service/stop.coffee/">Stop.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ssh <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../ssh/close.coffee/">Close.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ssh/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ssh/open.coffee/">Open.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ssh/root.coffee/">Root.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../system/cgroups.coffee/">Cgroups.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/chmod.coffee/">Chmod.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/chown.coffee/">Chown.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/copy.coffee/">Copy.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/discover.coffee/">Discover.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/limits.coffee/">Limits.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/link.coffee/">Link.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/mkdir.coffee/">Mkdir.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/mod.coffee/">Mod.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/move.coffee/">Move.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/remove.coffee/">Remove.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/tmpfs.coffee/">Tmpfs.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../system/uid_gid.coffee/">Uid gid.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Execute</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../system/execute/assert.coffee/">Assert.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../system/execute/index.coffee/">Index.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Group</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../system/group/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../system/group/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../system/user/index.coffee/">Index.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../system/user/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../tools/backup.coffee/">Backup.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools/compress.coffee/">Compress.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools/extract.coffee/">Extract.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools/git.coffee/">Git.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools/iptables.coffee/">Iptables.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools/repo.coffee/">Repo.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools/sysctl.coffee/">Sysctl.coffee</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Rubygems</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../tools/rubygems/fetch.coffee/">Fetch.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../tools/rubygems/install.coffee/">Install.coffee</a>
+</li>
+
+        
+            
+<li >
+    <a href="../tools/rubygems/remove.coffee/">Remove.coffee</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Wait <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../wait/execute.coffee/">Execute.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../wait/exist.coffee/">Exist.coffee</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../wait/index.coffee/">Index.coffee</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../index.coffee/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#nikita-context">Nikita Context</a></li>
+        
+            <li><a href="#helper-functions">Helper functions</a></li>
+        
+            <li><a href="#dependencies">Dependencies</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="nikita-context">Nikita Context</h1>
+<pre><code>called_deprecate_destination = false
+called_deprecate_local_source = false
+module.exports = -&gt;
+  if arguments.length is 2
+    obj = arguments[0]
+    obj.options = arguments[1]
+  else if arguments.length is 1
+    obj = new EventEmitter
+    obj.options = arguments[0]
+  else
+    obj = new EventEmitter
+    obj.options = {}
+  obj.registry ?= {}
+  obj.propagation ?= obj.options.propagation or {}
+  obj.store ?= {}
+  # Merge global default propagation
+  for k, v of module.exports.propagation
+    obj.propagation[k] = v unless obj.propagation[k] isnt undefined
+  # Internal state
+  state = {}
+  state.properties = {}
+  state.stack = []
+  state.todos = todos_create()
+  state.befores = []
+  state.afters = []
+  state.depth = 0
+  state.headers = []
+  state.once = {}
+  state.killed = false
+  state.index_counter = 0
+  # Domain
+  obj.options.domain =  domain.create() if obj.options.domain is true
+  domain_on_error = (err) -&gt;
+    err.message = "Invalid State Error [#{err.message}]"
+    handle_multiple_call err
+  obj.options.domain?.on 'error', domain_on_error
+  # Proxify
+  proxy = new Proxy obj,
+    has: (target, name) -&gt;
+      console.warns 'proxy has is being called', name
+      # target[name]? or target.registry.registered(proxy.type)? or registry.registered(name)?
+    apply: (target, thisArg, argumentsList) -&gt;
+      console.warn 'apply'
+    get: (target, name) -&gt;
+      return target[name] if obj[name]?
+      return target[name] if name in ['domain', '_events', '_maxListeners']
+      proxy.type = []
+      proxy.type.push name
+      if not obj.registry.registered(proxy.type, parent: true) and not registry.registered(proxy.type, parent: true)
+        proxy.type = []
+        return undefined
+      get_proxy_builder = -&gt;
+        builder = -&gt;
+          args = [].slice.call(arguments)
+          options = normalize_options args, proxy.type
+          {get, values} = handle_get proxy, options
+          return values if get
+          proxy.type = []
+          state.todos.push opts for opts in options
+          setImmediate _run_ if state.todos.length is options.length # Activate the pump
+          proxy
+        new Proxy builder,
+          get: (target, name) -&gt;
+            return target[name] if target[name]?
+            proxy.type.push name
+            if not obj.registry.registered(proxy.type, parent: true) and not registry.registered(proxy.type, parent: true)
+              proxy.type = []
+              return undefined
+            get_proxy_builder()
+      get_proxy_builder()
+  normalize_options = (_arguments, type, enrich=true) -&gt;
+    empty = false
+    middleware = obj.registry.get(type) or registry.get(type) if Array.isArray(type)
+    _arguments.unshift middleware.handler if middleware
+    handler = null
+    callback = null
+    options = []
+    for arg in _arguments
+      if typeof arg is 'function'
+        if not handler then handler = arg
+        else unless callback then callback = arg
+        else throw Error "Invalid third function argument"
+      else if Array.isArray arg
+        empty = true if arg.length is 0
+        for a in arg
+          if type is 'call'
+            a = handler: a unless typeof a is 'object' and not Array.isArray(a) and a isnt null
+          else
+            a = argument: a unless typeof a is 'object' and not Array.isArray(a) and a isnt null
+          options.push a
+      else
+        if typeof arg isnt 'object' and arg isnt null
+          arg = argument: arg
+        if options.length is 0
+          cloned_arg = {}
+          for k, v of arg then cloned_arg[k] = v
+          options.push cloned_arg
+        else for opts in options
+          for k, v of arg then opts[k] = v
+    return options if options.length is 0 and empty
+    options.push {} if options.length is 0
+    if options.length and options.filter( (opts) -&gt; not opts.handler ).length is 0
+      callback = handler
+      handler = null
+    # Normalize
+    for opts, i in options
+      # Clone
+      options[i] = {}
+      merge options[i], middleware if Array.isArray(type)
+      options[i][k] = v for k, v of opts
+      opts = options[i]
+      # Argument
+      if type is 'call' and not opts.handler #and typeof opts.argument is 'function'
+        opts.handler = opts.argument
+        opts.argument = undefined
+      # Enrich
+      if opts.destination
+        console.info 'Use options target instead of destination' unless called_deprecate_destination
+        called_deprecate_destination = true
+        opts.target ?= opts.destination
+      if opts.local_source
+        console.info 'Use options local instead of local_source' unless called_deprecate_local_source
+        called_deprecate_local_source = true
+        opts.local ?= opts.local_source
+      opts.type = type if type
+      opts.type = [opts.type] unless Array.isArray opts.type
+      opts.handler ?= handler if handler
+      opts.callback ?= callback if callback
+      opts.user_args = true if enrich and opts.callback?.length &gt; 2
+      opts.once = ['handler'] if opts.once is true
+      delete opts.once if opts.once is false
+      opts.once = opts.once.sort() if Array.isArray opts.once
+      opts.sleep ?= 3000 # Wait 3s between retry
+      opts.retry ?= 0
+      opts.disabled ?= false
+      opts.status ?= true
+      throw Error 'Incompatible Options: status "false" implies shy "true"' if opts.status is false and opts.shy is false # Room for argument, leave it strict for now until we come accross a usecase justifying it.
+      opts.shy ?= true if opts.status is false
+      # Validation
+      jump_to_error Error "Invalid options sleep, got #{JSON.stringify opts.sleep}" unless typeof opts.sleep is 'number' and opts.sleep &gt;= 0
+    options
+  enrich_options = (user_options) -&gt;
+    user_options.enriched = true
+    global_options = obj.options
+    parent_options = state.todos.options
+    options = {}
+    for k, v of user_options then options[k] = user_options[k]
+    for k, v of parent_options
+      options[k] = v if options[k] is undefined and obj.propagation[k]
+    for k, v of global_options
+      options[k] = v if options[k] is undefined
+    unless options.log?.dont
+      if options.log and not Array.isArray options.log
+        _logs = [options.log]
+      else if not options.log
+        _logs = []
+    log_disabled = true if options.log is false
+    options.log = [] if log_disabled
+    options.log = [] if options.log?._nikita_ # not clean but no better way to detect user provided option with the one from nikita
+    options.log ?= []
+    options.log = [options.log] unless Array.isArray options.log
+    _logs = options.log
+    if options.debug
+      _logs.push (log) -&gt;
+        return unless log.type in ['text', 'stdin', 'stdout_stream', 'stderr_stream']
+        return if log.type in ['stdout_stream', 'stderr_stream'] and log.message is null
+        msg = if log.message?.toString? then log.message.toString() else log.message
+        msg = "[#{log.total_depth}.#{log.level} #{log.module}] #{JSON.stringify msg}"
+        msg = switch log.type
+          when 'stdin' then "\x1b[33m#{msg}\x1b[39m"
+          when 'stdout_stream' then "\x1b[36m#{msg}\x1b[39m"
+          when 'stderr_stream' then "\x1b[35m#{msg}\x1b[39m"
+          else "\x1b[32m#{msg}\x1b[39m"
+        process.stdout.write "#{msg}\n" # todo: switch with stderr
+    options.log = (log) -&gt;
+      log = message: log if typeof log is 'string'
+      log.level ?= 'INFO'
+      log.time ?= Date.now()
+      log.module ?= undefined
+      log.header_depth ?= state.depth
+      log.headers ?= header for header in state.headers
+      log.total_depth ?= state.stack.length
+      log.type ?= 'text'
+      log.shy ?= options.shy
+      args = if 1 &lt;= arguments.length then [].slice.call(arguments, 0) else []
+      stackTrace = require 'stack-trace'
+      frame = stackTrace.get()[1]
+      file = path.basename(frame.getFileName())
+      line = frame.getLineNumber()
+      method = frame.getFunctionName()
+      log.file = file
+      log.line = line
+      args.unshift("" + file + ":" + line + " in " + method + "()");
+      _log log for _log in _logs
+      obj.emit? log.type, log unless log_disabled
+    options.log._nikita_ = true
+    if options.source and match = /~($|\/.*)/.exec options.source
+      unless obj.store['nikita:ssh:connection']
+      then options.source = path.join process.env.HOME, match[1]
+      else options.source = path.posix.join '.', match[1]
+    if options.target and match = /~($|\/.*)/.exec options.target
+      unless obj.store['nikita:ssh:connection']
+      then options.target = path.join process.env.HOME, match[1]
+      else options.target = path.posix.join '.', match[1]
+    options
+  call_callback = (fn, args) -&gt;
+    state.stack.unshift state.todos
+    state.todos = todos_create()
+    try
+      fn.apply proxy, args
+    catch err
+      state.todos = state.stack.shift()
+      jump_to_error err
+      args[0] = err
+      return run()
+    mtodos = state.todos
+    state.todos = state.stack.shift()
+    state.todos.unshift mtodos... if mtodos.length
+  handle_multiple_call = (err) -&gt;
+    state.killed = true
+    state.todos = state.stack.shift() while state.stack.length
+    jump_to_error err
+    run()
+  jump_to_error = (err) -&gt;
+    while state.todos[0] and state.todos[0].type not in ['catch', 'next', 'promise'] then state.todos.shift()
+    state.todos.err = err
+  _run_ = -&gt;
+    if obj.options.domain
+    then obj.options.domain.run run
+    else run()
+  run = (options, callback) -&gt;
+    options = state.todos.shift() unless options
+    unless options # Nothing more to do in current queue
+      if callback
+        callback state.todos.err
+      else
+        throw state.todos.err if not state.killed and state.stack.length is 0 and state.todos.err and state.todos.throw_if_error
+      if state.stack.length is 0
+        obj.options.domain?.removeListener 'error', domain_on_error
+      return
+    org_options = options
+    parent_options = state.todos.options
+    for k, v of parent_options
+      org_options[k] = v if org_options[k] is undefined and k isnt 'log' and obj.propagation[k] is true
+    options = enrich_options options
+    options.original = org_options
+    if options.type is 'next'
+      {err, status} = state.todos
+      status = status.some (status) -&gt; not status.shy and !!status.value
+      state.todos.final_err = err
+      todos_reset state.todos
+      options.handler?.call proxy, err, status
+      run()
+      return
+    if options.type is 'promise'
+      {err, status} = state.todos
+      status = status.some (status) -&gt; not status.shy and !!status.value
+      state.todos.final_err = err
+      todos_reset state.todos
+      options.handler?.call proxy, err, status
+      unless err
+      then options.deferred.resolve status
+      else options.deferred.reject err
+      return
+    return if state.killed
+    if array.compare options.type, ['end']
+      return conditions.all proxy, options
+      , -&gt;
+        while state.todos[0] and state.todos[0].type not in ['next', 'promise'] then state.todos.shift()
+        callback err if callback
+        run()
+      , (err) -&gt;
+        callback err if callback
+        run()
+    index = state.index_counter++
+    state.depth++ if options.header
+    state.headers.push options.header if options.header
+    options.log message: options.header, type: 'header', index: index, depth: state.depth, headers: (header for header in state.headers) if options.header
+    state.todos.status.unshift shy: options.shy, value: undefined
+    state.stack.unshift state.todos
+    state.todos = todos_create()
+    state.todos.options = org_options
+    wrap.options options, (err) -&gt;
+      do_disabled = -&gt;
+        unless options.disabled
+          options.log type: 'lifecycle', message: 'disabled_false', level: 'DEBUG', index: index, depth: state.depth, error: null, status: false
+          do_once()
+        else
+          options.log type: 'lifecycle', message: 'disabled_true', level: 'INFO', index: index, depth: state.depth, error: null, status: false
+          do_callback []
+      do_once = -&gt;
+        hashme = (value) -&gt;
+          if typeof value is 'string'
+            value = "string:#{string.hash value}"
+          else if typeof value is 'boolean'
+            value = "boolean:#{value}"
+          else if typeof value is 'function'
+            value = "function:#{string.hash value.toString()}"
+          else if value is undefined or value is null
+            value = 'null'
+          else if Array.isArray value
+            value = 'array:' + value.sort().map((value) -&gt; hashme value).join ':'
+          else if typeof value is 'object'
+            value = 'object'
+          else throw Error "Invalid data type: #{JSON.stringify value}"
+          value
+        if options.once
+          if typeof options.once is 'string'
+            hash = string.hash options.once
+          else if Array.isArray options.once
+            hash = string.hash options.once.map((k) -&gt; hashme options[k]).join '|'
+          else
+            throw Error "Invalid Option 'once': #{JSON.stringify options.once} must be a string or an array of string"
+          return do_callback [] if state.once[hash]
+          state.once[hash] = true
+        do_options_before()
+      do_options_before = -&gt;
+        return do_intercept_before() if options.options_before
+        options.before ?= []
+        options.before = [options.before] unless Array.isArray options.before
+        each options.before
+        .call (before, next) -&gt;
+          before = normalize_options [before], 'call', false
+          before = before[0]
+          opts = options_before: true
+          for k, v of before
+            opts[k] = v
+          for k, v of options
+            continue if k in ['handler', 'callback']
+            opts[k] ?= v
+          run opts, next
+        .error (err) -&gt; do_callback [err]
+        .next do_intercept_before
+      do_intercept_before = -&gt;
+        return do_conditions() if options.intercepting
+        each state.befores
+        .call (before, next) -&gt;
+          for k, v of before then switch k
+            when 'handler' then continue
+            when 'type' then return next() unless array.compare v, options[k]
+            else return next() unless v is options[k]
+          opts = intercepting: true
+          for k, v of before
+            opts[k] = v
+          for k, v of options
+            continue if k in ['handler', 'callback']
+            opts[k] ?= v
+          run opts, next
+        .error (err) -&gt; do_callback [err]
+        .next do_conditions
+      do_conditions = -&gt;
+        conditions.all proxy, options
+        , -&gt;
+          for k, v of options # Remove conditions from options
+            delete options[k] if /^if.*/.test(k) or /^unless.*/.test(k)
+          options.log type: 'lifecycle', message: 'conditions_passed', index: index, depth: state.depth, error: null, status: false
+          do_handler()
+        , (err) -&gt;
+          options.log type: 'lifecycle', message: 'conditions_failed', index: index, depth: state.depth, error: err, status: false
+          do_callback [err]
+      options.attempt = -1
+      do_handler = -&gt;
+        options.attempt++
+        do_next = ([err]) -&gt;
+          options.handler = options_handler
+          options.callback = options_callback
+          if err and err not instanceof Error
+            err = Error 'First argument not a valid error'
+            arguments[0][0] = err
+          options.log message: err.message, level: 'ERROR', index: index, module: 'nikita' if err
+          if err and ( options.retry is true or options.attempt &lt; options.retry - 1 )
+            options.log message: "Retry on error, attempt #{options.attempt+1}", level: 'WARN', index: index, module: 'nikita'
+            return setTimeout do_handler, options.sleep
+          do_intercept_after arguments...
+        options.handler ?= obj.registry.get(options.type)?.handler or registry.get(options.type)?.handler
+        return handle_multiple_call Error "Unregistered Middleware: #{options.type.join('.')}" unless options.handler
+        options_handler = options.handler
+        options_handler_length = options.handler.length
+        options.handler = undefined
+        options_callback = options.callback
+        options.callback = undefined
+        called = false
+        try
+          # Option to inject
+          opts = {}
+          # Clone first level properties
+          for k, v of options then opts[k] = v
+          for option, propagate of obj.propagation
+            delete opts[option] if propagate is false
+          # Handle deprecation
+          options_handler = ( (options_handler) -&gt;
+            util.deprecate -&gt;
+              options_handler.apply @, arguments
+            , if options.deprecate is true
+            then "#{options.type.join '/'} is deprecated"
+            else "#{options.type.join '/'} is deprecated, use #{options.deprecate}"
+          )(options_handler) if options.deprecate
+          handle_async_and_promise = -&gt;
+            return if state.killed
+            return handle_multiple_call Error 'Multiple call detected' if called
+            called = true
+            args = [].slice.call(arguments, 0)
+            setImmediate -&gt;
+              do_next args
+          if options_handler_length is 2 # Async style
+            promise_returned = false
+            result = options_handler.call proxy, opts, -&gt;
+              return if promise_returned
+              handle_async_and_promise.apply null, arguments
+            if promise.is result
+              promise_returned = true
+              return handle_async_and_promise Error 'Invalid Promise: returning promise is not supported in asynchronuous mode'
+          else # Sync style
+            result = options_handler.call proxy, opts
+            if promise.is result # result is a promisee
+              result.then (value) -&gt;
+                value = [value] unless Array.isArray value
+                handle_async_and_promise null, value...
+              , (reason) -&gt;
+                reason = Error 'Rejected Promise: reject called without any arguments' unless reason?
+                handle_async_and_promise reason
+            else
+              return if state.killed
+              return handle_multiple_call Error 'Multiple call detected' if called
+              called = true
+              status_sync = false
+              wait_children = -&gt;
+                unless state.todos.length
+                  return setImmediate -&gt;
+                    do_next [null, status_sync]
+                loptions = state.todos.shift()
+                run loptions, (err, status) -&gt;
+                  return do_next [err] if err
+                  # Discover status of all unshy children
+                  status_sync = true if status and not loptions.shy
+                  wait_children()
+              wait_children()
+        catch err
+          state.todos = []
+          do_next [err]
+      do_intercept_after = (args, callback) -&gt;
+        return do_options_after args if options.intercepting
+        each state.afters
+        .call (after, next) -&gt;
+          for k, v of after then switch k
+            when 'handler' then continue
+            when 'type' then return next() unless array.compare v, options[k]
+            else return next() unless v is options[k]
+          opts = intercepting: true
+          for k, v of after
+            opts[k] = v
+          for k, v of options
+            continue if k in ['handler', 'callback']
+            opts[k] ?= v
+          opts.callback_arguments = args
+          run opts, next
+        .error (err) -&gt; do_callback [err]
+        .next -&gt; do_options_after args
+      do_options_after = (args) -&gt;
+        return do_callback args if options.options_after
+        options.after ?= []
+        options.after = [options.after] unless Array.isArray options.after
+        each options.after
+        .call (after, next) -&gt;
+          after = normalize_options [after], 'call', false
+          after = after[0]
+          opts = options_after: true
+          for k, v of after
+            opts[k] = v
+          for k, v of options
+            continue if k in ['handler', 'callback']
+            opts[k] ?= v
+          run opts, next
+        .error (err) -&gt; do_callback [err]
+        .next -&gt; do_callback args
+      do_callback = (args) -&gt;
+        state.depth-- if options.header
+        state.headers.pop() if options.header
+        options.log type: 'handled', index: index, depth: state.depth, error: args[0], status: args[1]
+        return if state.killed
+        args[0] = undefined unless args[0] # Error is undefined and not null or false
+        args[1] = !!args[1] if options.status # Status is a boolean, error or not
+        state.todos = state.stack.shift() if state.todos.length is 0
+        jump_to_error args[0] if args[0] and not options.relax
+        state.todos.throw_if_error = false if args[0] and options.callback
+        # todo: we might want to log here a change of status, sth like:
+        # options.log type: 'lifecycle', message: 'status', index: index, depth: state.depth, error: err, status: true if options.status and args[1] and not state.todos.status.some (satus) -&gt; status
+        state.todos.status[0].value = args[1] if options.status
+        call_callback options.callback, args if options.callback
+        args[0] = null if options.relax
+        callback args[0], args[1] if callback
+        run()
+      do_disabled()
+  state.properties.child = get: -&gt; -&gt;
+    module.exports(obj.options)
+  state.properties.next = get: -&gt; -&gt;
+    state.todos.push type: 'next', handler: arguments[0]
+    setImmediate _run_ if state.todos.length is 1 # Activate the pump
+    proxy
+  state.properties.promise = get: -&gt; -&gt;
+    deferred = {}
+    promise = new Promise (resolve, reject)-&gt;
+      deferred.resolve = resolve
+      deferred.reject = reject
+    state.todos.push type: 'promise', deferred: deferred # handler: arguments[0],
+    setImmediate _run_ if state.todos.length is 1 # Activate the pump
+    promise
+  state.properties.end = get: -&gt; -&gt;
+    args = [].slice.call(arguments)
+    options = normalize_options args, 'end'
+    state.todos.push opts for opts in options
+    setImmediate _run_ if state.todos.length is options.length # Activate the pump
+    proxy
+  state.properties.call = get: -&gt; -&gt;
+    args = [].slice.call(arguments)
+    options = normalize_options args, 'call'
+    for opts in options
+      if typeof opts.handler is 'string'
+        opts.handler = path.resolve process.cwd(), opts.handler if opts.handler.substr(0, 1) is '.'
+        mod = require.main.require opts.handler
+        throw Error 'Array modules not yet supported' if Array.isArray mod
+        mod = normalize_options [mod], 'call'
+        opts.handler = mod.handler
+        opts[k] ?= v for k, v of mod[0]
+      throw Error 'Missing handler option' unless opts.handler
+      throw Error "Invalid Handler: expect a function, got '#{opts.handler}'" unless typeof opts.handler is 'function'
+    {get, values} = handle_get proxy, options
+    return values if get
+    state.todos.push opts for opts in options
+    setImmediate _run_ if state.todos.length is options.length # Activate the pump
+    proxy
+  state.properties.each = get: -&gt; -&gt;
+    args = [].slice.call(arguments)
+    arg = args.shift()
+    if not arg? or typeof arg isnt 'object'
+      jump_to_error Error "Invalid Argument: first argument must be an array or an object to iterate, got #{JSON.stringify arg}"
+      return proxy
+    options = normalize_options args, 'call'
+    for opts in options
+      if Array.isArray arg
+        for key in arg
+          opts.key = key
+          @call opts
+      else
+        for key, value of arg
+          opts.key = key
+          opts.value = value
+          @call opts
+    proxy
+  state.properties.before = get: -&gt; -&gt;
+    arguments[0] = type: arguments[0] if typeof arguments[0] is 'string' or Array.isArray(arguments[0])
+    options = normalize_options arguments, null, false
+    for opts in options
+      throw Error "Invalid handler #{JSON.stringify opts.handler}" unless typeof opts.handler is 'function'
+      state.befores.push opts
+    proxy
+  state.properties.after = get: -&gt; -&gt;
+    arguments[0] = type: arguments[0] if typeof arguments[0] is 'string' or Array.isArray(arguments[0])
+    options = normalize_options arguments, null, false
+    for opts in options
+      throw Error "Invalid handler #{JSON.stringify opts.handler}" unless typeof opts.handler is 'function'
+      state.afters.push opts
+    proxy
+  state.properties.status = get: -&gt; (index) -&gt;
+    if arguments.length is 0
+      return state.stack[0].status.some (status) -&gt; not status.shy and !!status.value
+    else if index is false
+      value = state.stack[0].status.some (status) -&gt; not status.shy and !!status.value
+      status.value = false for status in state.stack[0].status
+      return value
+    else if index is true
+      value = state.stack[0].status.some (status) -&gt; not status.shy and !!status.value
+      status.value = true for status in state.stack[0].status
+      return value
+    else
+      state.stack[0].status[Math.abs index]?.value
+  Object.defineProperties obj, state.properties
+  reg = registry.registry {}
+  Object.defineProperty obj.registry, 'get', get: -&gt; (name, handler) -&gt;
+    reg.get arguments...
+  Object.defineProperty obj.registry, 'register', get: -&gt; (name, handler) -&gt;
+    reg.register arguments...
+    proxy
+  Object.defineProperty obj.registry, 'registered', get: -&gt; (name, handler) -&gt;
+    reg.registered arguments...
+  Object.defineProperty obj.registry, 'unregister', get: -&gt; (name, handler) -&gt;
+    reg.unregister arguments...
+    proxy
+  if obj.options.ssh
+    if obj.options.ssh.config
+      obj.store['nikita:ssh:connection'] = obj.options.ssh
+      delete obj.options.ssh
+    else
+      proxy.ssh.open obj.options.ssh if not obj.options.no_ssh
+  proxy
+
+module.exports.propagation =
+  ssh: true
+  log: true
+  stdout: true
+  stderr: true
+  debug: true
+  after: false
+  before: false
+  disabled: false
+  domain: false
+  handler: false
+  header: false
+  once: false
+  relax: false
+  shy: false
+  sleep: false
+  sudo: true
+</code></pre>
+<h2 id="helper-functions">Helper functions</h2>
+<pre><code>todos_create = -&gt;
+  todos = []
+  todos_reset todos
+  todos
+todos_reset = (todos) -&gt;
+  todos.err = null
+  todos.status = []
+  todos.throw_if_error = true
+handle_get = (proxy, options) -&gt;
+  return get: false unless options.length is 1
+  if options.length is options.filter( (opts) -&gt; opts.get is true ).length
+    get = true
+    values = for opts in options
+      opts.handler.call proxy, opts, opts.callback
+    values = values[0] if values.length is 1
+  get: get, values: values
+</code></pre>
+<h2 id="dependencies">Dependencies</h2>
+<pre><code>registry = require './registry'
+domain = require 'domain'
+each = require 'each'
+path = require 'path'
+util = require 'util'
+array = require './misc/array'
+promise = require './misc/promise'
+conditions = require './misc/conditions'
+wrap = require './misc/wrap'
+string = require './misc/string'
+{merge} = require './misc'
+{EventEmitter} = require 'events'
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
